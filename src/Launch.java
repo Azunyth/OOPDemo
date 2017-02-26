@@ -13,6 +13,10 @@ public class Launch {
 		myAccount.debit(70);
 		myAccount.viewBalance();
 		
+		Person p = new Person();
+		p.openAccount();
+		p.getAccount().viewBalance();
+		
 	}
 
 }
