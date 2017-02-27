@@ -10,6 +10,7 @@ public class Person {
 	private int age;
 	private String city;
 	private Account account;
+	private Basket basket;
 	
 	/*****************************/
 	/**      CONSTRUCTEURS      **/
@@ -77,6 +78,14 @@ public class Person {
 
 	public void setAccount(Account account) {
 		this.account = account;
+	}
+
+	public Basket getBasket() {
+		return basket;
+	}
+
+	public void setBasket(Basket basket) {
+		this.basket = basket;
 	}
 	
 }

@@ -26,6 +26,10 @@ public class Basket {
 		}
 	}
 	
+	public void printBill() {
+		System.out.println(this.bill);
+	}
+	
 	public void calcTotalBasket() {
 		this.bill = 0;
 		for(Product p : this.products) {

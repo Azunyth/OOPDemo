@@ -4,18 +4,19 @@ public class Launch {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Account myAccount = new Account();
-		myAccount.viewBalance();
+		Person john = new Person("John", "DOE");
 		
-		myAccount.credit(100);
-		myAccount.viewBalance();
+		john.openAccount();
 		
-		myAccount.debit(70);
-		myAccount.viewBalance();
+		Basket johnBasket = new Basket();
 		
-		Person p = new Person();
-		p.openAccount();
-		p.getAccount().viewBalance();
+		john.setBasket(johnBasket);
+		
+		Product orange = new Product("Orange", 2.5);
+		
+		john.getBasket().addToBasket(orange);
+		
+		john.getBasket().printBill();
 		
 	}
 
