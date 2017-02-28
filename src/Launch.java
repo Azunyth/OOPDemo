@@ -4,7 +4,7 @@ public class Launch {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Person john = new Person("John", "DOE");
+		Worker john = new Worker("John", "DOE");
 		
 		john.openAccount();
 		
@@ -17,6 +17,13 @@ public class Launch {
 		john.getBasket().addToBasket(orange);
 		
 		john.getBasket().printBill();
+		
+		Classroom cr = new Classroom();
+		
+		Student ted = new HighSchool();
+		
+		cr.addStudent(ted);
+		cr.setTeacher(john);
 		
 	}
 

@@ -1,16 +1,16 @@
 
-public class Person {
+public abstract class Person {
 
 	/*************************/
 	/**      ATTRIBUTS      **/
 	/*************************/
 	
-	private String firstname;
-	private String lastname;
-	private int age;
-	private String city;
-	private Account account;
-	private Basket basket;
+	protected String firstname;
+	protected String lastname;
+	protected int age;
+	protected String city;
+	protected Account account;
+	protected Basket basket;
 	
 	/*****************************/
 	/**      CONSTRUCTEURS      **/
