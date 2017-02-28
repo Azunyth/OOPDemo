@@ -38,6 +38,10 @@ public class Account {
 		System.out.println("Balance : " + this.balance);
 	}
 	
+	public boolean canDebit(double amount) {
+		return amount < this.balance;
+	}
+	
 	/******************************/
 	/**  ACCESSEURS | MUTATEURS  **/
 	/******************************/

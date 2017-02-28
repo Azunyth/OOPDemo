@@ -37,4 +37,8 @@ public class Basket {
 		}
 	}
 	
+	public double getBill() {
+		return bill;
+	}
+	
 }

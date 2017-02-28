@@ -36,6 +36,13 @@ public class Person {
 		}
 	}
 	
+	public void payBasket() {
+		if(this.account.canDebit(this.basket.getBill())) {
+			// il ne faudrait pas cast en int mais tout changer en double
+			this.account.debit((int)this.basket.getBill());
+		}
+	}
+	
 	/******************************/
 	/**  ACCESSEURS | MUTATEURS  **/
 	/******************************/
